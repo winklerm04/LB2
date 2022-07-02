@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+
+html body {
+    width: 100%;
+}
+
+
+* {
+    text-decoration: none;
+    padding: 0;
+    background-color: unset;
+    border: unset;
+}
+
+
+body {
+    width: 100%;
+}
+
+
+body.open {
+    overflow: hidden;
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+a:hover {
+    color: #ff8800;
+}
+
+
+/* header */
+/* burger */
+.nav-burger {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #0070BA;
+}
+
+
+.nav-burger.close {
+    display: none;
+}
+
+
+nav #nav-list {
+    display: none;
+}
+
+
+nav.expanded .close {
+    display: block;
+}
+
+
+nav.expanded .nav-burger.open {
+    display: none;
+}
+
+
+nav.expanded #nav-list {
+    display: block;
+}
+
+
+#nav-list {
+    color: white;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 28px;
+}
+
+
+nav ul li a {
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--black);
+    /* font-weight: 500; */
+}
+
+
+li {
+    margin: 5px;
+}
+
+
+#nav-list li a {
+    font-size: 17px;
+}
+
+
+
+
+/* main(Fotogalerie) */
+
+h1 {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 2px;
+    font-weight: 550;
+    padding: 17px 10px;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin: 5px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+img.img{
+    width: 50%;
+}
+
+
+#Fotos img {
+    width: 150px;
+    margin-top: 30px;
+}
+
+
+#Fotos p {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: 15px;
+}
+
+
+#Fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+
+/* Footer */
+
+#FooterBild {
+    width: 90%;
+    margin-top: 10px;
+}
+
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    border-top: solid 1px black;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    /* Navigation */
+
+    .nav-burger {
+        display: none;
+    }
+
+
+    ul#nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 50%;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+
+    nav#main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    /* Header */
+
+    header {
+        flex-direction: row;
+    }
+
+
+    /* logo */
+
+    .logo {
+        background-color: white;
+        width: 170px;
+        margin-top: 10px;
+        margin-left: 15px;
+        height: 130px;
+
+    }
+
+
+    #logo {
+        width: 170px;
+    }
+
+
+    /* main (Fotogalerie)*/
+
+    h1 {
+        display: inline-block;
+        font-size: 45px;
+        line-height: 5px;
+        font-weight: 550;
+        padding: 25px 15px;
+        background: #0070BA;
+        color: #ffffff;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        margin: 5px;
+        margin-top: 50px;
+        margin-left: 20px;
+        font-family: 'Anton', sans-serif;
+    }
+
+
+    #Fotos img {
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+
+    #Fotos p {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+
+    #Fotos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: space-around;
+        margin-right: 50px;
+    }
+
+
+    /* Footer */
+
+    #FooterBild {
+        width: 65%;
+        margin-top: 10px;
+    }
+
+
+    .footer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 30px;
+        border-top: solid 1px black;
+    }
+
+
+    h6 {
+        font-size: 25px;
+    }
+}
